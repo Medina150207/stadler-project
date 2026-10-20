@@ -1,0 +1,185 @@
+{
+  "sources": {
+    "brochure": {
+      "path": "/Users/ajsulukenzina/Downloads/model_7100_1683537405.pdf",
+      "pages": 2,
+      "identity": "FLIRT Electric Low-Floor Multiple Unit, Koleje Mazowieckie, Poland",
+      "sheet_code": "FKM0719e",
+      "all_pages_read": true,
+      "renders": [
+        "/private/tmp/stadler_reference/model_7100-page-1.png",
+        "/private/tmp/stadler_reference/model_7100-page-2.png"
+      ],
+      "drawing_crop": "/private/tmp/stadler_reference/model_7100-drawing.png"
+    },
+    "analysis": {
+      "path": "/Users/ajsulukenzina/Downloads/Stadler_IEEE_Complete_Analysis_RU (1).docx",
+      "description": "User supplied secondary analysis, dated 2026-10-17; tables and all paragraphs extracted. Contains quoted original case inputs, inferred results and explicitly provisional technical extensions.",
+      "text_path": "/private/tmp/stadler_reference/analysis_text.txt"
+    }
+  },
+  "vehicle": {
+    "identity": "Stadler FLIRT for Koleje Mazowieckie, Poland",
+    "cars": 5,
+    "cars_evidence": "Brochure side/plan drawing has two end cars and three intermediate cars; DOCX case says five cars.",
+    "confirmed_dimensions": {
+      "overall_length_m": 98.2,
+      "width_m": 2.82,
+      "height_m": 4.28,
+      "gauge_mm": 1435,
+      "floor_low_mm": 780,
+      "floor_high_mm": 1270,
+      "entrance_clear_width_mm": 1300,
+      "bogie_wheelbase_mm": 2700,
+      "new_driving_wheel_diameter_mm": 870,
+      "new_trailer_wheel_diameter_mm": 760
+    },
+    "confirmed_technical": {
+      "supply": "3 kV DC",
+      "axle_arrangement": "Bo’2’2’2’2’Bo’",
+      "bogies_total": 6,
+      "powered_bogies": 2,
+      "trailer_jacobs_bogies": 4,
+      "continuous_power_at_wheel_kw": 2000,
+      "maximum_power_at_wheel_kw": 3000,
+      "starting_acceleration_gross_m_s2": ">1.0",
+      "brochure_maximum_speed_kmh": 160,
+      "seats_second_class": 269,
+      "tipup_seats": 10,
+      "standing_4_persons_m2": 321,
+      "body_material": "Aluminium lightweight car body",
+      "traction_motors": "Asynchronous",
+      "suspension": "Pneumatic motor and trailer bogies",
+      "protection": "ETCS L2 Baseline 3.4.0 Guardia"
+    },
+    "visible_architecture": [
+      "Sloped rounded cab ends at both ends; broad dark windscreen with upper destination screen.",
+      "Two double sliding passenger doors per car per side, giving ten door openings per side. Cab access door additional.",
+      "Six bogies: one motor bogie near each cab, four shared trailer bogies at articulations.",
+      "Four narrow black flexible gangways between car bodies.",
+      "Visible roof equipment including HVAC, electrical boxes and pantograph equipment. Two pantographs appear on the first intermediate car in side drawing; precise equipment placement not dimensioned.",
+      "White exterior with green side/cab panels and yellow passenger doors in the actual Polish rendering. Using blue palette is intentional visual restyling.",
+      "Black window band, individual rounded rectangular windows, end coupling assembly, recessed headlights."
+    ],
+    "geometry_limits": [
+      "No 3D CAD/GLB or dimensioned cross sections are supplied.",
+      "Per-car lengths, cab/nose coordinates, roof curvature, wall thickness, door/window longitudinal coordinates and equipment CAD are not supplied.",
+      "Architectural reconstruction can match five-car layout, overall dimensions, bogie arrangement and visible proportions; an exact production geometry replica cannot be certified from this brochure.",
+      "Brochure is standard-gauge Polish 3 kV DC equipment, not proof of Kazakhstan gauge, supply or climate certification."
+    ],
+    "fleet_number_note": "Page 1 describes framework for 71 units; page 2 table says number of vehicles 61. These refer to procurement quantities and are not car count per train."
+  },
+  "case_inputs_from_analysis_docx": {
+    "train_A_mass_t": 145,
+    "train_B_mass_t": 180,
+    "mass_difference_t": 35,
+    "cars_per_train": 5,
+    "stops": 15,
+    "case_max_speed_kmh": 140,
+    "annual_distance_km": 245000,
+    "delta_energy_saving_mwh_per_train_year": 357,
+    "tariff_pln_per_kwh": 1.2,
+    "purchase_premium_pln_per_train": 400000,
+    "trains": 20,
+    "years": 30,
+    "tariff_escalation_per_year": 0.02,
+    "40_years_status": "Optional extension from oral comment, not mandatory case horizon."
+  },
+  "financial_model": {
+    "meaning": "357 MWh/year is A versus B difference, not total energy of either train. Absolute train demand cannot be recovered from the supplied figures.",
+    "formulas": {
+      "annual_saving": "deltaEnergyMWh * 1000 * tariffPLNperKWh",
+      "tariff_year_t": "tariff0 * (1 + growth)^(t - 1)",
+      "gross_lifetime": "sum(annualSaving0 * (1 + growth)^(t - 1), t=1..years) * fleet",
+      "net_lifetime": "gross_lifetime - purchasePremiumPerTrain * fleet",
+      "simple_payback": "purchasePremiumPerTrain / annualSaving0",
+      "optional_npv": "-purchasePremium + sum(annualSaving0*(1+growth)^(t-1)/(1+discount)^t)"
+    },
+    "baseline_results": {
+      "annual_saving_pln": 428400.0,
+      "lifetime_energy_1_mwh": 10710,
+      "lifetime_energy_20_mwh": 214200,
+      "lifetime_gross_fixed_1_pln": 12852000.0,
+      "lifetime_gross_fixed_20_pln": 257040000.0,
+      "lifetime_net_fixed_1_pln": 12452000.0,
+      "lifetime_net_fixed_20_pln": 249040000.0,
+      "lifetime_gross_2pct_1_pln": 17379365.13149386,
+      "lifetime_gross_2pct_20_pln": 347587302.6298772,
+      "lifetime_net_2pct_1_pln": 16979365.13149386,
+      "lifetime_net_2pct_20_pln": 339587302.6298772,
+      "simple_payback_years": 0.9337068160597572,
+      "simple_payback_months": 11.204481792717086
+    },
+    "timing": "First year tariff is 1.2; first increase starts in year 2. Baseline payback is within year 1, so yearly escalation does not change it.",
+    "limits": [
+      "Undiscounted except explicitly optional NPV.",
+      "Does not include maintenance, financing, tax, residual value, manufacturing, material sourcing or disposal.",
+      "Changing baseline delta energy by +/-10% is sensitivity, not a measured weather response.",
+      "Do not derive baseline annual kWh directly from mass or change 357 MWh with unsupported weather multipliers."
+    ]
+  },
+  "chemistry_and_environment": {
+    "confirmed_numeric_environment_values_in_files": [],
+    "confirmed_temperature_envelope": "Not provided in either supplied file. -50 to +50 C is the user requested scenario control, not a proven operating envelope for this FLIRT.",
+    "humidity": "No measured RH range, HVAC humidity response or corrosion calibration supplied.",
+    "chemical_mentions": {
+      "aluminium_groups": "ISO 15608 groups 22 and 23 discussed as provisional categories, not confirmed actual Stadler grades.",
+      "aluminium_examples": [
+        "Al-Mn",
+        "Al-Mg",
+        "Al-Mg-Si",
+        "Al-Zn-Mg"
+      ],
+      "steel_groups": "ISO 15608 1.2 and 2.1 are provisional discussion categories.",
+      "helium_argon": "Possible aluminium welding shielding gas choices. Actual use by Stadler, ratio, flow, import provenance and costs not confirmed.",
+      "weather_exposure": "Moisture, temperature cycles and deicing reagents appear as factors, but no pollutant concentrations or validated formulas supplied."
+    },
+    "ui_recommendation": "Temperature and humidity sliders can drive clearly labeled visualization scenarios. Mg/Mn/Si/Zn and Ar/He sliders, if offered, must sit in an explicit experimental material/process panel with illustrative values and no claim of Stadler alloy certification. Ar/He is a fabrication process scenario, not ambient weather. Do not show invented concentrations as sourced facts.",
+    "named_missing_inputs": [
+      "Exact alloy grade and chemical composition certificate",
+      "Low-temperature base-metal and welded-joint data",
+      "Fatigue and corrosion test results",
+      "Temperature/humidity operating envelope",
+      "Monthly HVAC demand for both train alternatives",
+      "Route and wind profiles",
+      "Measured calibrated dose-response coefficients"
+    ]
+  },
+  "conflicts_and_separation": [
+    "Brochure maximum speed 160 km/h and assignment maximum speed 140 km/h are distinct; do not silently replace one with the other.",
+    "Brochure is actual aluminium FLIRT; steel comparator is hypothetical case, not a supplied equivalent product drawing.",
+    "145/180 t are whole-train case masses, not carbody-only material masses.",
+    "Aluminium does not automatically reduce heating demand; HVAC differences are unknown.",
+    "-50 to +50 C visualization is not safety qualification or manufacturer certification."
+  ],
+  "docx_hyperlinks": [
+    {
+      "id": "rId12",
+      "target": "https://www.gov.kz/org/astana/press/news/details/947036?lang=ru"
+    },
+    {
+      "id": "rId13",
+      "target": "https://umt1998.tongji.edu.cn/en/article/doi/10.16037/j.1007-869x.2023.08.050"
+    },
+    {
+      "id": "rId14",
+      "target": "https://doi.org/10.1088/1755-1315/791/1/012082"
+    },
+    {
+      "id": "rId15",
+      "target": "https://edl.csrzic.com/en/article/doi/10.13890/j.issn.1000-128X.2025.02.003/"
+    },
+    {
+      "id": "rId16",
+      "target": "https://www.intechopen.com/chapters/75650"
+    },
+    {
+      "id": "rId17",
+      "target": "https://www.iso.org/standard/88796.html"
+    },
+    {
+      "id": "rId18",
+      "target": "https://landingpage.bsigroup.com/LandingPage/Series?UPI=BS+EN+15085"
+    }
+  ]
+}
