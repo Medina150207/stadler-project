@@ -1,0 +1,68 @@
+{
+  "schema": "stadler-rail-lab-v1",
+  "createdAt": "2026-10-17T22:26:07.119Z",
+  "mode": "scenario",
+  "source": "user scenario",
+  "target": {
+    "Temp_C": 12,
+    "Humidity_Percent": 58,
+    "Wind_ms": 4,
+    "Precipitation": 0,
+    "CH4_ppm": 2.2,
+    "H2S_ppm": 0.02,
+    "CO_ppm": 3.5,
+    "VOC_ppm": 180,
+    "Pressure_hPa": 1013,
+    "Light_lux": 38000,
+    "Mud_Level_cm": 0,
+    "Mud_Viscosity_Index": 6,
+    "Mud_Salinity_uS_cm": 900,
+    "Fluid_Level_cm": 0,
+    "Accel_Z_g": 1,
+    "Impact_N": 0
+  },
+  "rendered": {
+    "Temp_C": 12,
+    "Humidity_Percent": 58,
+    "Wind_ms": 4,
+    "Precipitation": 0,
+    "CH4_ppm": 2.2,
+    "H2S_ppm": 0.02,
+    "CO_ppm": 3.5,
+    "VOC_ppm": 180,
+    "Pressure_hPa": 1013,
+    "Light_lux": 38000,
+    "Mud_Level_cm": 0,
+    "Mud_Viscosity_Index": 6,
+    "Mud_Salinity_uS_cm": 900,
+    "Fluid_Level_cm": 0,
+    "Accel_Z_g": 1,
+    "Impact_N": 0
+  },
+  "compositionExample": {
+    "Mg": 10,
+    "Mn": 0.4,
+    "Si": 0.6,
+    "Zn": 0.2,
+    "He": 100,
+    "Al": 88.8,
+    "Ar": 0
+  },
+  "compositionIsCertified": false,
+  "geometry": "FLIRT KM brochure-based reconstruction; Polish 1435 mm / 3 kV DC",
+  "economicAssumptions": {
+    "energyDifferenceMWh": 357,
+    "annualKm": 245000,
+    "tariffPLN": 1.2,
+    "growth": 0.02,
+    "years": 30,
+    "fleet": 1
+  },
+  "history": [],
+  "limits": [
+    "Weather effects illustrative",
+    "Mine CSV is not railway telemetry",
+    "No certified temperature range or alloy supplied",
+    "Weather does not alter the case financial inputs"
+  ]
+}

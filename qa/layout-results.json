@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17T22:28:04.332Z",
+  "checks": 6,
+  "results": [
+    {
+      "name": "Primary and secondary text exceed 7:1 against the declared navy panel color",
+      "passed": true
+    },
+    {
+      "name": "Existing validation message switches language immediately",
+      "passed": true
+    },
+    {
+      "name": "Final navy interface and revised cab/bogie screenshots generated",
+      "passed": true
+    },
+    {
+      "name": "Final layout at 360/390/768px without overflow, adaptive camera fit",
+      "passed": true
+    },
+    {
+      "name": "Camera transition interpolates and reaches its selected close-up",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors in final layout and camera checks",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

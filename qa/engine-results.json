@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-17T22:15:32.630Z",
+  "checks": 10,
+  "results": [
+    {
+      "name": "All 16 fields: lower/upper bounds, clamping, invalid inputs",
+      "passed": true
+    },
+    {
+      "name": "Smooth interpolation is bounded, monotonic, deterministic and converges",
+      "passed": true
+    },
+    {
+      "name": "Weather at -50/+50 C and RH 0/100 is finite and continuous",
+      "passed": true
+    },
+    {
+      "name": "Case arithmetic: 357 MWh/year, 428400 PLN/year, 30 years and premium",
+      "passed": true
+    },
+    {
+      "name": "2% tariff growth begins in year 2, exact geometric series and fleet scaling",
+      "passed": true
+    },
+    {
+      "name": "Both original six-node CSV streams parse completely",
+      "passed": true
+    },
+    {
+      "name": "Malformed schema, duplicate nodes, missing ticks and invalid numbers rejected",
+      "passed": true
+    },
+    {
+      "name": "CSV raw temperature above 50 is preserved; only visual temperature is clamped",
+      "passed": true
+    },
+    {
+      "name": "CSV input bytes match supplied original SHA-256 digests",
+      "passed": true
+    },
+    {
+      "name": "Every preserved monitoring asset matches original source",
+      "passed": true
+    }
+  ]
+}

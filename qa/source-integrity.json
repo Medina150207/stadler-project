@@ -1,0 +1,10 @@
+[
+  {
+    "file": "data/sensor_stream_predictive_mesh.csv",
+    "sha256": "6458b64b23750840df98d8248333e4a398ed198e4b3748ed74c8dcde1bd4b40f"
+  },
+  {
+    "file": "data/sensor_stream_emergency_mesh.csv",
+    "sha256": "f19309b4a619a9c8419943bb904603af270a9413355ad5238932c6f28495ecc1"
+  }
+]

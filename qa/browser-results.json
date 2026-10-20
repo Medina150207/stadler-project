@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-17T22:26:16.180Z",
+  "browser": "Installed Chrome, headless WebGL",
+  "checks": 24,
+  "results": [
+    {
+      "name": "English default, actual WebGL train and local resources load",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion preference starts with instant values and paused particles",
+      "passed": true
+    },
+    {
+      "name": "All 16 numeric controls at both boundaries and above-max clamping; slider sync",
+      "passed": true
+    },
+    {
+      "name": "Empty numeric input is rejected without NaN",
+      "passed": true
+    },
+    {
+      "name": "Smooth cold transition converges; current and target are distinct",
+      "passed": true
+    },
+    {
+      "name": "Instant +50 C / RH 100 matches numeric state and visual state",
+      "passed": true
+    },
+    {
+      "name": "200 rapid slider events remain finite and responsive",
+      "passed": true
+    },
+    {
+      "name": "Winter snow and rain presets update scene weather",
+      "passed": true
+    },
+    {
+      "name": "Pointer and keyboard orbit, zoom, reset and three camera presets",
+      "passed": true
+    },
+    {
+      "name": "Transparent shell, dimensions, source livery and selectable 2D drawing",
+      "passed": true
+    },
+    {
+      "name": "Explicit CSV mode locks sensor editing; replay advances and pauses",
+      "passed": true
+    },
+    {
+      "name": "CSV temperature above 50 remains raw; visual cap explicitly shown",
+      "passed": true
+    },
+    {
+      "name": "Valid CSV imports locally; malformed file preserves current dataset",
+      "passed": true
+    },
+    {
+      "name": "Returning to scenario restores prior manual state",
+      "passed": true
+    },
+    {
+      "name": "Illustrative alloy balance and complementary Ar/He composition",
+      "passed": true
+    },
+    {
+      "name": "Economics: 1/20 trains and 2% tariff toggle use computed case results",
+      "passed": true
+    },
+    {
+      "name": "Local JSON export contains state, history, assumptions and limitations",
+      "passed": true
+    },
+    {
+      "name": "Sources dialog: source drawing and four TurboSquid comparisons",
+      "passed": true
+    },
+    {
+      "name": "EN/RU/KZ, 360/390/768/1440px without horizontal overflow or empty translations",
+      "passed": true
+    },
+    {
+      "name": "Language preference persists across reload",
+      "passed": true
+    },
+    {
+      "name": "Runtime sends no requests outside localhost",
+      "passed": true
+    },
+    {
+      "name": "Forced WebGL failure still provides working 2D and controls",
+      "passed": true
+    },
+    {
+      "name": "Direct index.html opens with network offline, 3D and Kazakh interface",
+      "passed": true
+    },
+    {
+      "name": "No uncaught JavaScript errors across all scenarios",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

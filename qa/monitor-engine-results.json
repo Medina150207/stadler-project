@@ -1,0 +1,41 @@
+{
+  "passed": 9,
+  "results": [
+    {
+      "name": "Baseline: all six zones and eight helmets available",
+      "passed": true
+    },
+    {
+      "name": "Relay failure disconnects its branches, preserves reachable branches, and restores",
+      "passed": true
+    },
+    {
+      "name": "Emergency scenario crosses the retained methane limit and produces a trend estimate",
+      "passed": true
+    },
+    {
+      "name": "Predictive scenario develops a forecast before the methane threshold",
+      "passed": true
+    },
+    {
+      "name": "CSV tick zero retains all six input readings without synthesized replacements",
+      "passed": true
+    },
+    {
+      "name": "Incomplete CSV is rejected atomically",
+      "passed": true
+    },
+    {
+      "name": "Training table is not silently interpreted as a streaming CSV",
+      "passed": true
+    },
+    {
+      "name": "Non-numeric data and duplicate zone/tick pairs are rejected",
+      "passed": true
+    },
+    {
+      "name": "CSV replay resets trend history at the loop boundary",
+      "passed": true
+    }
+  ]
+}
